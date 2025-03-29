@@ -28,4 +28,9 @@ another quick tutorial: [youtube tutorial](https://www.youtube.com/watch?v=UiZGT
 3 minute youtube tutorial: [quick tutorial](https://youtu.be/O96m52ZxQcw?si=VJqgVixjIyaUEEUe)
 
 #### standalone application
-Build x64/x86 debug or release. Copy `Assets` folder to project root>>x64|x86>>debug|release where .exe and .dll files are located. Now run .exe
+Instead of standard visual studio project structure, settings are modified so that final and intermediate files are inside bin directory inside solution directory. Output directory is: `$(SolutionDir)bin\$(Platform)\$(Configuration)\` and intermediate directory is `$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\`
+
+
+ After that, assets are copied with post-build command `xcopy /Y /E /I "$(ProjectDir)Assets" "$(SolutionDir)bin\$(Platform)\$(Configuration)\Assets"` so that tetris.exe becomes standalone application.
+
+ I modified this because i think it's much more logical and organized in better way.
