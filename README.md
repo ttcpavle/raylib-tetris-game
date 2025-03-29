@@ -1,7 +1,9 @@
-## Tetris game using raylib library
+# Tetris game using raylib library
 Game is made in c++ with **raylib** library that uses OpenGL in background. It is well suited for game development on lower level but at the same time abstracts raw OpenGL api.
 
-![tetris game screenshot](tetris/Assets/Screenshots/image1.png "tetris game")
+<div style="text-align: center">
+    <img src="tetris/Assets/Screenshots/image1.png" style="width:50%;height:50%;">
+</div>
 
 ## How to run
 Project is currenly supported for windows visual studio.
@@ -27,7 +29,7 @@ another quick tutorial: [youtube tutorial](https://www.youtube.com/watch?v=UiZGT
 
 3 minute youtube tutorial: [quick tutorial](https://youtu.be/O96m52ZxQcw?si=VJqgVixjIyaUEEUe)
 
-#### standalone application
+### standalone application
 Instead of standard visual studio project structure, settings are modified so that final and intermediate files are inside bin directory inside solution directory. Output directory is: `$(SolutionDir)bin\$(Platform)\$(Configuration)\` and intermediate directory is `$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\`
 
 
