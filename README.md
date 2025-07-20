@@ -7,6 +7,7 @@ Game is made in c++ with **raylib** library that uses OpenGL in background. It i
 
 ## How to run
 Project is currenly supported for windows visual studio.
+Download the game from the Releases (download Tetris-v1.0.zip, extract files and run Tetris.exe), or build the game yourself with steps below:
 ### Recommended approach
 1) install vcpkg package manager for managing libraries on windows: [quick youtube tutorial](https://youtu.be/0h1lC3QHLHU?si=1Y38M3zK9OY3GYae) - note: vcpkg directory gets large, choose path like C:\vcpkg\
 2) open system environment variables so we can set vcpkg variable and use vcpkg anywhere in the system
